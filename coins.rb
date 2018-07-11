@@ -15,7 +15,7 @@ coins = {:quarter => 25, :dime => 10, :nickel => 5, :penny => 1}
     elsif change >= coins [:nickel]
           change -= coins [:nickel]
           nickel_count += 1
-          hsh.store(:dime, dime_count)
+          hsh.store(:nickel, nickel_count)
     elsif change >= coins [:penny]
           change -= coins [:penny]
           penny_count += 1
