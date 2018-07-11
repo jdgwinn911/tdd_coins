@@ -14,6 +14,10 @@ class TestCoins < Minitest::Test
         assert_equal({:nickel => 1}, coin_coin(5))
     end
 
+    def test_that_a_dime_is_10_cents
+        assert_equal({:dime => 10}, coin_coin(10))
+    end
+
 
 
 
