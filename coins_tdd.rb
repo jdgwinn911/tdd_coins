@@ -18,6 +18,10 @@ class TestCoins < Minitest::Test
         assert_equal({:dime => 1}, coin_coin(10))
     end
 
+    def test_that_a_quarter_is_25_cents
+        assert_equal({:quarter => 1}, coin_coin(25))
+    end
+
 
 
 
