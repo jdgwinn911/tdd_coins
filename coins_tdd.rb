@@ -34,8 +34,8 @@ class TestCoins < Minitest::Test
         assert_equal({:quarter => 3, :nickel => 1}, coin_coin(80))
     end
 
-    def test_that_10_dimes_make_100_cents
-        assert_equal({:dime => 10}, coin_coin(100))
+    def test_that_2_dimes_make_20_cents
+        assert_equal({:dime =>2}, coin_coin(20))
     end
 
 
