@@ -26,6 +26,14 @@ class TestCoins < Minitest::Test
         assert_equal({:quarter => 1, :nickel => 1}, coin_coin(30))
     end
 
+    def test_that_4_quarters_make_100_cents
+        assert_equal({:quarter => 4}, coin_coin(100))
+    end
+
+    def test_that_3_quarters_and_a_nickel_make_80_cents
+        assert_equal({:quarter => 3, :nickel => 1}, coin_coin(80))
+    end
+
 
 
 
